@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYU-Sync Prototype</title>
+    <link rel="stylesheet" href="sih_style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>AYU-Sync Prototype</h1>
+            <p>A simple interface to demonstrate the integration of NAMASTE and ICD-11 codes.</p>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2>Terminology Lookup</h2>
+                <p>Search for a medical term (e.g., 'Fever', 'Kasa', 'Headache'). Results will appear as you type.</p>
+                <input type="text" id="lookup-input" placeholder="Start typing a term...">
+                <div id="lookup-results" class="results-container">
+                    </div>
+            </section>
+
+            <section class="card">
+                <h2>Code Translator</h2>
+                <p>Enter an exact code from either system (e.g., 'A01' or '1D01') to get its direct translation.</p>
+                <div class="input-group">
+                    <input type="text" id="translate-input" placeholder="Enter an exact code...">
+                    <button id="translate-btn">Translate</button>
+                </div>
+                <div id="translate-result" class="results-container">
+                    </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="watermark">The Synapse</div>
+
+    <script src="sih_script.js"></script>
+</body>
+</html>
